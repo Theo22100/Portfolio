@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Mon Portfolio</title>
+    <!-- IMPORT FONT SORA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <meta http:equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo"><span class="port-hash">#</span>PortFolio</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">ACCUEIL</a></li>
+                <li><a href="#">A PROPOS</a></li>
+                <li><a href="#">PROJETS</a></li>
+                <li>
+                    <a class="btn" href="#">ME CONTACTER</a>
+                </li>
+            </ul>
+        </div>
+        <img src="img/site/menu-btn.png" alt="Menu Hamburger" class="menu-hamburger">
+    </nav>
+    <header></header>
+    <div class="present">
+        <p class="present-text">
+        Je m’appelle Théo Guérin,<br>
+         je suis un Développeur FullStack en <br>
+         apprentissage,en combinant mes cours ainsi<br>
+         que mes recherches personnelles.
+        </p>
+        <img src="img/site/rocket.png" alt="rocket" id="rocket">
+    </div>
+    <hr class="line"></div>
+   
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+</html>
