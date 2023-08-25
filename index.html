@@ -1,380 +1,237 @@
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none; /* Enleve les puces */
-}
-
-
-body {
-  font-family: "Sora" ;
-  background-color: #1D1C1C;
-}
-
-header{
-  height: 25vh;
-  width: 100vw;
-}
-
-/* NAVBAR */
-
-.navbar{
-  position: fixed;
-  padding: 3px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #1d1c1c5b;
-  backdrop-filter:blur(7px);
-
-}
-
-.navbar a {
-  color:#F2F2F2;
-}
-
-.navbar .logo {
-  font-size: 2.8em;
-  font-weight:bold;
-}
-
-
-.navbar .nav-links ul {
-  display:flex;
-  align-items: center;
-  
-}
-
-.navbar .nav-links ul li {
-  margin: 0 25px;
-}
-
-
-/* Bouton */
-
-.btn {
-  display: inline-block;
-  padding: 18px 20px;
-  font-size: 16px;
-  color: white;
-  border: 3px solid #05bffa;
-  cursor: pointer;
-  position: relative;
-  background-color: transparent;
-  text-decoration: none;
-  overflow: hidden;
-  z-index: 1;
- }
- 
- .btn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #05bffa;
-  transform: translateX(-100%);
-  transition: all .3s;
-  z-index: -1;
- }
- 
- .btn:hover::before {
-  transform: translateX(0);
- }
-
-
-
-
-/* Logo hamburger menu*/
-.navbar .menu-hamburger{
-  display: none;
-  position:absolute;
-  top: 50px;
-  right: 30px;
-  width: 35px;
-}
-
-.port-hash{
-  color:#04A6D9;
-  background-color: transparent;
-}
-
-
-
-
-
-
-/* Disparaitre les li à partir de 900px + apparraitre menu hamburger*/
-@media screen and (max-width: 900px){
-  .navbar {
-    padding: 0;
-  }
-
-  .navbar .logo {
-    position: absolute;
-    top: 36px;
-    left:50px;
-  }
-  .navbar .menu-hamburger{
-    display: block;
-  }
-  .nav-links {
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-color:rgba(255, 255, 255, 0.464);
-    backdrop-filter:blur(7px);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -100%; /* rend le menu invi*/
-    transition: all 0.5s ease;
-  }
-
-  .mobile-menu{
-    margin-left:0;
-  }
-
-  .nav-links ul {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-  }
-
-  .navbar .nav-links ul li {
-    margin: 25px 0;
-    font-size: 1.2em;
-  }
-}
-
-.present{
-  display:flex;
-  flex-direction:row;
-  padding-top:5%;
-  padding-left:5%;
-  justify-content: space-between;
-  padding: 1% 20%
-}
-
-.present-text{
-  display:flex;
-  align-items:center;
-  color:#F2F2F2;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-#rocket{
-  width: 400px;
-  height: auto;
-}
-
-hr.line{
-    border: 2px solid #F2F2F2;
-    width: 180px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* INTRODUCTIOn */
-
-.titre{
-  font-size: 2.4em;
-  font-weight:bold;
-  color:#F2F2F2;
-  display:flex;
-  padding-top: 10px;
-  justify-content: center;
-}
-
-.titre-hash{
-  color:#04A6D9;
-}
-
-.intro{
-  display:flex;
-  padding-top: 25px;
-  justify-content: center;
-  text-align: center;
-
-}
-
-.intro-text{
-  color:#F2F2F2;
-  font-size: 20px;
-font-style: normal;
-font-weight: 400;
-
-}
-
-.intro-pc-text{
-  display:flex;
-  flex-direction:row;
-  padding:7% 10%;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  
-  
-}
-
-.intro-text-2{
-  color:#F2F2F2;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  padding-top:5%;
-  background: transparent;
-}
-
-.intro-text-3{
-  color:#F2F2F2;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  padding:5% 0%;
-  background: transparent;
-}
-
-
-
-#computer{
-  width: 286px;
-  height:fit-content;
-}
-/* Rectangle arrondi intro*/
-.intro-pc-text .texts{
-  width:619px;
-  height:auto;
-  border-radius: 10px;
-  border: 1px solid #666;
-  background: #343434;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.img-text{
-  background:transparent;
-  display:flex;
-  flex-direction:row;
-  text-align:center;
-  justify-content: space-between;
-  align-items:center;
-  padding: 10px 40px;
-}
-
-#picture-intro{
-  width:20px;
-  height: fit-content;
-  background-color: #04A6D9;
-  border: 4px solid #04A6D9;
-  border-radius: 10px;
-  
-
-
-}
-
-/* CARROUSEL */
-.carrousel{
-  padding: 5% 5%;
-}
-
-
-
-.swiper-slide {
-  text-align: center;
-  font-size: 24px;
-  background: #ffffff65;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius:10px;  
-
-}
-
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
-  
-}
-
-.swiper-backface-hidden .swiper-slide{
-  height: 300px;
-  width: auto;
-  display:flex;
-  
-}
-
-/* BOUTON PROJETS*/
-
-.cssbuttons-io {
-  position: relative;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.05em;
-  border-radius: 0.8em;
-  border: none;
-  background: linear-gradient(to right, #05bffa, #004bac);
-  color: ghostwhite;
-  overflow: hidden;
-
-}
-
-.cssbuttons-io svg {
-  width: 1.2em;
-  height: 1.2em;
-  margin-right: 0.5em;
-}
-
-.cssbuttons-io span {
-  position: relative;
-  z-index: 10;
-  transition: color 0.4s;
-  display: inline-flex;
-  align-items: center;
-  padding: 0.8em 1.2em 0.8em 1.05em;
-}
-
-.cssbuttons-io::before,
-.cssbuttons-io::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.cssbuttons-io::before {
-  content: "";
-  background: #000;
-  width: 120%;
-  left: -10%;
-  transform: skew(30deg);
-  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-}
-
-.cssbuttons-io:hover::before {
-  transform: translate3d(100%, 0, 0);
-}
-
-.cssbuttons-io:active {
-  transform: scale(0.95);
-}
-
-/* SPAN */
-#a-projet{
-  
-  color:white;
-}
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Mon Portfolio</title>
+    <!-- IMPORT FONT SORA -->
+    <link rel="icon" type="image/x-icon" href="img/site/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http:equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- CARROUSEL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo"><span class="port-hash">#</span>PortFolio</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">ACCUEIL</a></li>
+                <li><a href="#">A PROPOS</a></li>
+                <li><a href="#">PROJETS</a></li>
+                <li>
+                    <a class="btn" href="#">ME CONTACTER</a>
+                </li>
+            </ul>
+        </div>
+        <img src="img/site/menu-btn.png" alt="Menu Hamburger" class="menu-hamburger">
+    </nav>
+    <header></header>
+    <!-- PRESENTATION -->
+    <div class="present">
+        <p class="present-text">
+            Je m’appelle Théo Guérin,<br>
+            je suis un Développeur FullStack en <br>
+            apprentissage,en combinant mes cours ainsi<br>
+            que mes recherches personnelles.
+        </p>
+        <img src="img/site/rocket.png" alt="rocket" id="rocket">
+    </div>
+    <hr class="line">
+    </div>
+    <!-- INTRO -->
+    <div class="titre">
+        <span class="titre-hash">#</span>Introduction</a>
+    </div>
+    <div class="intro">
+        <p class="intro-text">
+            Je suis très motivé pour apprendre et progresser en tant que<br>
+            développeur et je suis impatient d'appliquer mes <br>
+            compétences et mes connaissances à des projets.
+        </p>
+    </div>
+    <div class="intro-pc-text">
+        <img src="img/icons/pc.png" alt="Computer" id="computer">
+        <div class="texts">
+            <div class="img-text">
+                <img src="img/icons/compass.png" alt="compass" id="picture-intro">
+                <p class="intro-text-2">
+                    Je possède une solide base dans le développement à<br>
+                    la fois front-end et back-end, avec une expérience<br>
+                    dans des langages tels que HTML, CSS, JavaScript et<br>
+                    PHP.
+                </p>
+            </div>
+            <div class="img-text">
+                <img src="img/icons/coop.png" alt="coop" id="picture-intro">
+                <p class="intro-text-3">
+                    Je maîtrise également les méthodologies agiles et j’ai<br>
+                    de l’experience dans le travail en équipe.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="line">
+    </div>
+    <!-- PROJETS -->
+    <div class="titre">
+        <span class="titre-hash">#</span>Projets</a>
+    </div>
+    <div class="intro">
+        <p class="intro-text">
+            Je suis très motivé pour apprendre et progresser en tant que<br>
+            développeur et je suis impatient d'appliquer mes <br>
+            compétenceset mes connaissances à des projets.
+        </p>
+    </div>
+
+    <!-- CARROUSSEL-->
+
+    <!-- Swiper -->
+    <div class="carrousel">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    CosmicLink<br>
+                    PHP/JS<br>
+                    <button class="cssbuttons-io">
+                        <a id="a-projet" href="https://github.com/Theo22100/CosmicLink" target="_blank">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z">
+                                    </path>
+                                </svg> Code</span>
+                        </a>
+                    </button>
+                </div>
+                <div class="swiper-slide">
+                    BreizhCoin<br>
+                    PHP/JS<br>
+                    <button class="cssbuttons-io">
+                        <a id="a-projet" href="https://github.com/Theo22100/BreizhCoin" target="_blank">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z">
+                                    </path>
+                                </svg> Code</span>
+                        </a>
+                    </button>
+
+                </div>
+                <div class="swiper-slide">
+                    PortFolio<br>
+                    HTML/CSS/JS<br>
+                    <button class="cssbuttons-io">
+                        <a id="a-projet" href="https://github.com/Theo22100/PortFolio" target="_blank">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z">
+                                    </path>
+                                </svg> Code
+                            </span>
+                        </a>
+                    </button>
+                </div>
+                <div class="swiper-slide">
+                    Début VueJS<br>
+                    VueJS<br>
+                    <button class="cssbuttons-io">
+                        <a id="a-projet" href="https://github.com/Theo22100/VueJS" target="_blank">
+                            <span id="vuejs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z">
+                                    </path>
+                                </svg> Code</span>
+                        </a>
+                    </button>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- PROJETS -->
+    <hr class="line">
+    </div>
+
+    <div class="titre">
+        <span class="titre-hash">#</span>Technologies</a>
+    </div>
+    <div class="intro">
+        <p class="intro-text">
+            Je suis impatient de relever de nouveaux défis et de<br>
+            contribuer au succès de votre équipe. Je me réjouis d'avoir<br>
+            l'occasion de travailler avec vous et de développer mes<br>
+            compétences.
+        </p>
+    </div>
+
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+<script>
+    var wrexlinks = document.getElementsByClassName("wrexlink")
+    for (var x = 0; x < wrexlinks.length; x++) {
+
+        var wrexlink = wrexlinks[x];
+        var url = wrexlink.getAttribute('data-url');
+        if (url) {
+            wrexlink.setAttribute("title", url);
+            wrexlink.addEventListener("click", function (e) {
+                e.stopImmediatePropagation();
+                console.log("Launching URL: [" + url + "] in your default browser.")
+                require('child_process').execSync('start ' + url);
+            });
+        }
+    }  
+</script>
+
+
+
+
+
+</html>
