@@ -492,19 +492,18 @@ hr.line {
   padding: 5% 0%;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   
 }
 
 #GitHubBW{
   height: 50px;
   width: 50px;
-  padding: 0% 15%;
 }
 
 #linkedinBW{
   height: 50px;
   width: 50px;
-  padding: 0% 15%;
 }
 
 /* FOOTER */
