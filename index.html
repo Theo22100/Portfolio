@@ -19,6 +19,7 @@
     <!-- CARROUSEL -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
+
 </head>
 
 <body>
@@ -191,8 +192,144 @@
         </p>
     </div>
 
+
+
+    <div class="sections">
+        <div class="col">
+            <div class="techno-para">
+                <img class="img" src="img/icons/html.png" alt="Html" />
+                <div class="techno-list">
+                    <div class="techno-titre">HTML</div>
+                    <p class="p">Langage de balisage utilisé pour créer la structure et la présentation des pages web.
+                    </p>
+                </div>
+            </div>
+            <div class="techno-para">
+                <img class="img" src="img/icons/css.png" alt="CSS" />
+                <div class="techno-list">
+                    <div class="techno-titre">CSS</div>
+                    <p class="p">Langage de feuilles de style utilisé pour décrire la présentation d'un document écrit
+                        en HTML.</p>
+                </div>
+            </div>
+            <div class="techno-para">
+                <img class="img" src="img/icons/js.png" alt="Js" />
+                <div class="techno-list">
+                    <div class="techno-titre">JavaScript</div>
+                    <p class="p">Langage de programmation utilisé pour créer des sites web interactifs et dynamiques.
+                    </p>
+                </div>
+            </div>
+            <div class="techno-para">
+                <img class="img" src="img/icons/vuejs.png" alt="VueJS" />
+                <div class="techno-list">
+                    <div class="techno-titre">Vue.js</div>
+                    <p class="p">Cadre JavaScript open-source pour la création d'interfaces utilisateur.</p>
+                </div>
+            </div>
+            <div class="techno-para">
+                <img class="img" src="img/icons/scala.png" alt="Scala" />
+                <div class="techno-list">
+                    <div class="techno-titre">Scala</div>
+                    <p class="p">Langage de programmation polyvalent, compatible avec Java, et offrant des
+                        fonctionnalités de programmation fonctionnelle et orientée objet.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col">
+            <div class="techno-para">
+                <img class="img" src="img/icons/git.png" alt="GIT" />
+                <div class="techno-list">
+                    <div class="techno-titre">GIT</div>
+                    <p class="p">Système de contrôle de version qui permet aux développeurs de suivre les modifications
+                        apportées à leur code, de collaborer avec d'autres personnes et de revenir facilement aux
+                        versions précédentes.</p>
+                </div>
+            </div>
+            <div class="techno-para">
+                <img class="img" src="img/icons/php.png" alt="PHP" />
+                <div class="techno-list">
+                    <div class="techno-titre">PHP</div>
+                    <p class="p">Langage de script côté serveur utilisé pour créer des pages web dynamiques.</p>
+                </div>
+            </div>
+            <div class="techno-para">
+                <img class="img" src="img/icons/mysql.png" alt="MySQL" />
+                <div class="techno-list">
+                    <div class="techno-titre">MySQL</div>
+                    <p class="p">Système de gestion de base de données relationnelle utilisé pour stocker et récupérer
+                        des données.</p>
+                </div>
+            </div>
+            <div class="techno-para">
+                <img class="img" src="img/icons/java.png" alt="Java" />
+                <div class="techno-list">
+                    <div class="techno-titre">Java</div>
+                    <p class="p">Langage de programmation polyvalent et orienté objet, fonctionnant sur une machine
+                        virtuelle pour une portabilité accrue.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+
+    <hr class="line">
+    </div>
+
+    <div class="titre">
+        <span class="titre-hash">#</span>Contact</a>
+    </div>
+
+    <div class="contact">
+        <div class="contact-div">
+            <p class="contact-text-1">
+                Vous pouvez me contacter via Mail ou bien sur ces plateformes :
+            </p>
+            <div class="contact-img">
+                <img src="img/icons/GitHubW.png" alt="GitHubBW" id="GitHubBW">
+                <img src="img/icons/linkedinBW.png" alt="linkedinBW" id="linkedinBW">
+            </div>
+            <p class="contact-mail">
+                Theo.Guerin35000@gmail.com
+            </p>
+        </div>
+        <div class="contact-div">
+            <p class="contact-text-2">
+                Je suis impatient de relever de nouveaux défis et de contribuer au succès de votre équipe.
+            </p>
+            <p class="contact-text-2">
+                Je me réjouis d'avoir l'occasion de travailler avec vous et de développer mes compétences.
+
+            </p>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
 </body>
 
+
+
+
+<footer>
+    <p>Fait par Théo</p>
+    <p>2023</p>
+</footer>
+
+
+
+<!-- HAMBURGER -->
 <script>
     const menuHamburger = document.querySelector(".menu-hamburger")
     const navLinks = document.querySelector(".nav-links")
@@ -202,7 +339,8 @@
     })
 </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<!-- Initialize Swiper -->
+
+<!-- SWIPER-->
 <script>
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
@@ -213,23 +351,12 @@
         },
     });
 </script>
-<script>
-    var wrexlinks = document.getElementsByClassName("wrexlink")
-    for (var x = 0; x < wrexlinks.length; x++) {
 
-        var wrexlink = wrexlinks[x];
-        var url = wrexlink.getAttribute('data-url');
-        if (url) {
-            wrexlink.setAttribute("title", url);
-            wrexlink.addEventListener("click", function (e) {
-                e.stopImmediatePropagation();
-                console.log("Launching URL: [" + url + "] in your default browser.")
-                require('child_process').execSync('start ' + url);
-            });
-        }
-    }  
-</script>
 
+<!-- BOOTSTRAPS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 
 
 
