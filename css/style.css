@@ -3,14 +3,14 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  /* Enleve les puces */
-  overflow-x: clip;
+  
 }
 
 
 body {
   font-family: "Sora";
   background-color: #1D1C1C;
+  overflow-x: clip;
 }
 
 header {
@@ -30,6 +30,7 @@ header {
   box-sizing: border-box;
   background-color: #1d1c1c5b;
   backdrop-filter: blur(7px);
+  z-index: 100;
 }
 
 .navbar a {
@@ -166,6 +167,7 @@ header {
 
   .sections {
     flex-direction: column;
+    align-items: center;
   }
 
   .contact{
@@ -302,7 +304,7 @@ hr.line {
 
 /* CARROUSEL */
 .carrousel {
-  padding: 5% 5%;
+  padding: 5% 10%;
 }
 
 
