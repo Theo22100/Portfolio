@@ -395,11 +395,8 @@ hr.line {
   transform: scale(0.95);
 }
 
-/* SPAN */
-#a-projet {
 
-  color: white;
-}
+
 
 .sections {
   display: flex;
@@ -532,5 +529,9 @@ footer {
 
   margin-top: 3%;
 
+}
+
+a{
+  color:white;
 }
 
