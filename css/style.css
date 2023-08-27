@@ -416,6 +416,7 @@ hr.line {
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
+  width: 40%;
 }
 
 .col .techno-para {
@@ -446,7 +447,6 @@ hr.line {
 
   flex-direction: column;
   padding-left: 7%;
-  width: 440px;
 }
 
 .col .p {
