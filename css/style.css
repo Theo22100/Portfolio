@@ -419,6 +419,8 @@ hr.line {
   width: 40%;
 }
 
+
+
 .col .techno-para {
   position: relative;
   flex-direction: row;
@@ -426,13 +428,22 @@ hr.line {
   padding: 1%;
 }
 
+.col .techno-img{
+  display:flex;
+  min-width: 74px;
+  height: 74px;
+  background-color: #04A6D9;
+  border-radius: 10px;
+  align-items: center;
+  padding: 8px;
+  
+}
+
 
 .col img {
   width: 50px;
   height: 50px;
-  background-color: #04A6D9;
-  border: 12px solid #04A6D9;
-  border-radius: 10px;
+  margin: auto;
 }
 
 .col .techno-titre {
