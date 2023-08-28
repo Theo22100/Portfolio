@@ -25,14 +25,14 @@
 <body>
     <!-- NAVBAR -->
     <nav class="navbar">
-        <a href="#" class="logo"><span class="port-hash">#</span>PortFolio</a>
+        <a href="HOME" class="logo"><span class="port-hash">#</span>PortFolio</a>
         <div class="nav-links">
             <ul>
-                <li><a href="#">ACCUEIL</a></li>
-                <li><a href="#">A PROPOS</a></li>
-                <li><a href="#">PROJETS</a></li>
+                <li><a href="#HOME">ACCUEIL</a></li>
+                <li><a href="#PROPOS">A PROPOS</a></li>
+                <li><a href="#PROJETS">PROJETS</a></li>
                 <li>
-                    <a class="btn" href="#">ME CONTACTER</a>
+                    <a class="btn" href="#CONTACT">ME CONTACTER</a>
                 </li>
             </ul>
         </div>
@@ -40,7 +40,7 @@
     </nav>
     <header></header>
     <!-- PRESENTATION -->
-    <div class="present">
+    <div class="present" id="HOME">
         <p class="present-text">
             Je m’appelle Théo Guérin,<br>
             je suis un Développeur FullStack en <br>
@@ -52,7 +52,7 @@
     <hr class="line">
     </div>
     <!-- INTRO -->
-    <div class="titre">
+    <div class="titre" id="PROPOS">
         <span class="titre-hash">#</span>Introduction</a>
     </div>
     <div class="intro">
@@ -86,9 +86,8 @@
     </div>
 
     <hr class="line">
-    </div>
     <!-- PROJETS -->
-    <div class="titre">
+    <div class="titre" id="PROJETS">
         <span class="titre-hash">#</span>Projets</a>
     </div>
     <div class="intro">
@@ -197,15 +196,22 @@
     <div class="sections">
         <div class="col">
             <div class="techno-para">
-                <img class="img" src="img/icons/html.png" alt="Html" />
+                <div class="techno-img">
+                    <img class="img" src="img/icons/html.png" alt="Html" />
+                </div>
                 <div class="techno-list">
+
                     <div class="techno-titre">HTML</div>
                     <p class="p">Langage de balisage utilisé pour créer la structure et la présentation des pages web.
                     </p>
                 </div>
             </div>
             <div class="techno-para">
-                <img class="img" src="img/icons/css.png" alt="CSS" />
+
+                <div class="techno-img">
+                    <img class="img" src="img/icons/css.png" alt="CSS" />
+                </div>
+
                 <div class="techno-list">
                     <div class="techno-titre">CSS</div>
                     <p class="p">Langage de feuilles de style utilisé pour décrire la présentation d'un document écrit
@@ -213,7 +219,11 @@
                 </div>
             </div>
             <div class="techno-para">
-                <img class="img" src="img/icons/js.png" alt="Js" />
+
+                <div class="techno-img">
+                    <img class="img" src="img/icons/js.png" alt="Js" />
+                </div>
+
                 <div class="techno-list">
                     <div class="techno-titre">JavaScript</div>
                     <p class="p">Langage de programmation utilisé pour créer des sites web interactifs et dynamiques.
@@ -221,14 +231,18 @@
                 </div>
             </div>
             <div class="techno-para">
-                <img class="img" src="img/icons/vuejs.png" alt="VueJS" />
+                <div class="techno-img">
+                    <img class="img" src="img/icons/vuejs.png" alt="VueJS" />
+                </div>
                 <div class="techno-list">
                     <div class="techno-titre">Vue.js</div>
                     <p class="p">Cadre JavaScript open-source pour la création d'interfaces utilisateur.</p>
                 </div>
             </div>
             <div class="techno-para">
-                <img class="img" src="img/icons/scala.png" alt="Scala" />
+                <div class="techno-img">
+                    <img class="img" src="img/icons/scala.png" alt="Scala" />
+                </div>
                 <div class="techno-list">
                     <div class="techno-titre">Scala</div>
                     <p class="p">Langage de programmation polyvalent, compatible avec Java, et offrant des
@@ -239,7 +253,9 @@
         </div>
         <div class="col">
             <div class="techno-para">
-                <img class="img" src="img/icons/git.png" alt="GIT" />
+                <div class="techno-img">
+                    <img class="img" src="img/icons/git.png" alt="GIT" />
+                </div>
                 <div class="techno-list">
                     <div class="techno-titre">GIT</div>
                     <p class="p">Système de contrôle de version qui permet aux développeurs de suivre les modifications
@@ -248,14 +264,18 @@
                 </div>
             </div>
             <div class="techno-para">
-                <img class="img" src="img/icons/php.png" alt="PHP" />
+                <div class="techno-img">
+                    <img class="img" src="img/icons/php.png" alt="PHP" />
+                </div>
                 <div class="techno-list">
                     <div class="techno-titre">PHP</div>
                     <p class="p">Langage de script côté serveur utilisé pour créer des pages web dynamiques.</p>
                 </div>
             </div>
             <div class="techno-para">
-                <img class="img" src="img/icons/mysql.png" alt="MySQL" />
+                <div class="techno-img">
+                    <img class="img" src="img/icons/mysql.png" alt="MySQL" />
+                </div>
                 <div class="techno-list">
                     <div class="techno-titre">MySQL</div>
                     <p class="p">Système de gestion de base de données relationnelle utilisé pour stocker et récupérer
@@ -263,7 +283,9 @@
                 </div>
             </div>
             <div class="techno-para">
-                <img class="img" src="img/icons/java.png" alt="Java" />
+                <div class="techno-img">
+                    <img class="img" src="img/icons/java.png" alt="Java" />
+                </div>
                 <div class="techno-list">
                     <div class="techno-titre">Java</div>
                     <p class="p">Langage de programmation polyvalent et orienté objet, fonctionnant sur une machine
@@ -278,7 +300,7 @@
     <hr class="line">
     </div>
 
-    <div class="titre">
+    <div class="titre" id="CONTACT">
         <span class="titre-hash">#</span>Contact</a>
     </div>
 
@@ -288,11 +310,13 @@
                 Vous pouvez me contacter via Mail ou bien sur ces plateformes :
             </p>
             <div class="contact-img">
-                <a href="https://github.com/Theo22100" target="_blank"><img src="img/icons/GitHubW.png" alt="GitHubBW" id="GitHubBW"></a>
-                <a href="https://www.linkedin.com/in/théo-guérin-b20630192/" target="_blank"><img src="img/icons/linkedinBW.png" alt="linkedinBW" id="linkedinBW"></a>
+                <a href="https://github.com/Theo22100" target="_blank"><img src="img/icons/GitHubW.png" alt="GitHubBW"
+                        id="GitHubBW"></a>
+                <a href="https://www.linkedin.com/in/théo-guérin-b20630192/" target="_blank"><img
+                        src="img/icons/linkedinBW.png" alt="linkedinBW" id="linkedinBW"></a>
             </div>
             <p class="contact-mail">
-                <a href="mailto:Theo.Guerin35000@gmail.com" >Theo.Guerin35000@gmail.com</a>
+                <a href="mailto:Theo.Guerin35000@gmail.com">Theo.Guerin35000@gmail.com</a>
             </p>
         </div>
         <div class="contact-div">
@@ -342,24 +366,24 @@
 
 <!-- SWIPER-->
 <script>
-    if(screen.width>900){
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    }else{
+    if (screen.width > 900) {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    } else {
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
     }
 
 </script>
