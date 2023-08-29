@@ -195,6 +195,9 @@ header {
   .contact-div{
     padding-top: 20px !important;
   }
+
+  
+
 }
 
 .present {
@@ -222,11 +225,14 @@ header {
 }
 
 hr.line {
+  
   border: 2px solid #F2F2F2;
   width: 180px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 }
+
 
 /* INTRODUCTIOn */
 
