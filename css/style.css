@@ -46,7 +46,6 @@ header {
 .navbar .nav-links ul {
   display: flex;
   align-items: center;
-  background-color: #1d1c1c99;
   
 }
 
@@ -165,6 +164,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #1d1c1c99;
     box-shadow: inset 0px 0px 20px 20px #1d1c1c99;
     border-radius:10px;
     padding: 10px;
