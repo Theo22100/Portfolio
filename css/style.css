@@ -33,6 +33,11 @@ header {
   z-index: 100;
 }
 
+/* Appliquer le soulignement au texte lors du survol */
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
 .navbar a {
   color: #F2F2F2;
 }
