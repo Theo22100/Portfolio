@@ -17,7 +17,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <!-- CARROUSEL -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet" />
 
 
 </head>
@@ -40,172 +41,93 @@
     </nav>
     <header></header>
     <!-- PRESENTATION -->
-    <div class="present" id="HOME">
-        <p class="present-text">
-            Je m’appelle Théo Guérin,<br>
-            je suis un Développeur FullStack en 
-            apprentissage, en combinant mes cours ainsi
-            que mes recherches personnelles.
-        </p>
-        <img src="img/site/rocket.webp" alt="rocket" id="rocket">
-    </div>
-    <hr class="line">
-    </div>
-    <!-- INTRO -->
-    <div class="titre" id="PROPOS">
-        <span class="titre-hash">#</span>Introduction</a>
-    </div>
-    <div class="intro">
-        <p class="intro-text">
-            Je suis très motivé pour apprendre et progresser en tant que<br>
-            développeur et je suis impatient d'appliquer mes <br>
-            compétences et mes connaissances à des projets.
-        </p>
-    </div>
-    <div class="intro-pc-text">
-        <img src="img/icons/pc.webp" alt="Computer" id="computer">
-        <div class="texts">
-            <div class="img-text">
-                <img src="img/icons/compass.webp" alt="compass" id="picture-intro">
-                <p class="intro-text-2">
-                    Je possède une solide base dans le développement à<br>
-                    la fois front-end et back-end, avec une expérience<br>
-                    dans des langages tels que HTML, CSS, JavaScript et<br>
-                    PHP.
+    <div>
+        <div class="present" id="HOME">
+            <p class="present-text" id="presentation">
+                {{ message_presentation }}
+            </p>
+            <img src="img/site/rocket.webp" alt="rocket" id="rocket">
+        </div>
+        <hr class="line">
+        <!-- INTRO -->
+        <div class="titre" id="PROPOS">
+            <span class="titre-hash">#</span>Introduction</a>
+        </div>
+        <div id="app_intro">
+            <div class="intro">
+                <p class="intro-text">
+                    {{ message_intro_1 }}
                 </p>
             </div>
-            <div class="img-text">
-                <img src="img/icons/coop.webp" alt="coop" id="picture-intro">
-                <p class="intro-text-3">
-                    Je maîtrise également les méthodologies agiles et j’ai<br>
-                    de l’experience dans le travail en équipe.
 
+            <div class="intro-pc-text">
+                <img src="img/icons/pc.webp" alt="Computer" id="computer">
+                <div class="texts">
+                    <div class="img-text">
+                        <img src="img/icons/compass.webp" alt="compass" id="picture-intro">
+                        <p class="intro-text-2">
+                            {{ message_intro_2 }}
+                        </p>
+                    </div>
+                    <div class="img-text">
+                        <img src="img/icons/coop.webp" alt="coop" id="picture-intro">
+                        <p class="intro-text-3">
+                            {{ message_intro_3 }}
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="line">
+            <!-- PROJETS -->
+            <div class="titre" id="PROJETS">
+                <span class="titre-hash">#</span>Projets</a>
+            </div>
+            <div class="intro" id="app_projet">
+                <p class="intro-text">
+                    {{ message_projet_1 }}
                 </p>
             </div>
         </div>
-    </div>
 
-    <hr class="line">
-    <!-- PROJETS -->
-    <div class="titre" id="PROJETS">
-        <span class="titre-hash">#</span>Projets</a>
-    </div>
-    <div class="intro">
-        <p class="intro-text">
-            Je suis très motivé pour apprendre et progresser en tant que<br>
-            développeur et je suis impatient d'appliquer mes <br>
-            compétences et mes connaissances à des projets.
-        </p>
-    </div>
-
-    <!-- CARROUSSEL-->
-
-    <!-- Swiper -->
-    <div class="carrousel">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    CosmicLink<br>
-                    PHP/JS<br>
-                    <button class="cssbuttons-io">
-                        <a id="a-projet" href="https://github.com/Theo22100/CosmicLink" target="_blank">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path fill="currentColor"
-                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z">
-                                    </path>
-                                </svg> Code</span>
-                        </a>
-                    </button>
-                    <button class="cssbuttons-io">
-                        <a id="a-projet" href="https://youtu.be/3yVybmKT5d0?si=9euURMrfR9DQTFzi" target="_blank">
-                            <span id="vuejs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path fill="currentColor"
-                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z">
-                                    </path>
-                                </svg> Youtube</span>
-                        </a>
-                    </button>
+        <!-- CARROUSSEL-->
+        <template id="v-carousel">
+            <div class="card-carousel-wrapper">
+                <div class="card-carousel--nav__left" @click="moveCarousel(-1)" :disabled="atHeadOfList"></div>
+                <div class="card-carousel">
+                    <div class="card-carousel--overflow-container">
+                        <div class="card-carousel-cards" :style="{ transform: 'translateX(' + currentOffset + 'px)'}">
+                            <div class="card-carousel--card" v-for="item in items">
+                                <img :src="item.image" />
+                                <div class="card-carousel--card--footer">
+                                    <p>{{ item.name }}</p>
+                                    <p class="tag" v-for="(tag, index) in item.tag"
+                                        :class="index > 0 ? 'secondary' : ''">{{ tag }}</p>
+                                        <p>
+                                        <button class="cssbuttons-io" @click="openCodeLink(item.link)">
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path fill="currentColor"
+                                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z">
+                                                    </path>
+                                                </svg> Code</span>
+                                        </button>
+                                        
+                                    </p>    
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    BreizhCoin<br>
-                    PHP/JS<br>
-                    <button class="cssbuttons-io">
-                        <a id="a-projet" href="https://github.com/Theo22100/BreizhCoin" target="_blank">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path fill="currentColor"
-                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z">
-                                    </path>
-                                </svg> Code</span>
-                        </a>
-                    </button>
-                    <button class="cssbuttons-io">
-                        <a id="a-projet" href="https://youtu.be/OqgS7SW_8tU?si=oP-CXSMNh_mlMY2P" target="_blank">
-                            <span id="vuejs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path fill="currentColor"
-                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z">
-                                    </path>
-                                </svg> Youtube</span>
-                        </a>
-                    </button>
-
-                </div>
-                <div class="swiper-slide">
-                    PortFolio<br>
-                    HTML/CSS/JS<br>
-                    <button class="cssbuttons-io">
-                        <a id="a-projet" href="https://github.com/Theo22100/PortFolio" target="_blank">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path fill="currentColor"
-                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z">
-                                    </path>
-                                </svg> Code
-                            </span>
-                        </a>
-                    </button>
-                </div>
-                <div class="swiper-slide">
-                    Début VueJS<br>
-                    VueJS<br>
-
-                    </button>
-                    <button class="cssbuttons-io">
-                        <a id="a-projet" href="https://github.com/Theo22100/VueJS" target="_blank">
-                            <span id="vuejs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path fill="currentColor"
-                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z">
-                                    </path>
-                                </svg> Code</span>
-                        </a>
-                    </button>
-                </div>
-                <div class="swiper-slide">
-                    ServiceAdministratif<br>
-                    Symfony/Tailwind<br>
-
-                    </button>
-                    <button class="cssbuttons-io">
-                        <a id="a-projet" href="https://github.com/imPayne/service_administratif" target="_blank">
-                            <span id="serviceadmin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path fill="currentColor"
-                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z">
-                                    </path>
-                                </svg> Code</span>
-                        </a>
-                    </button>
-                </div>
-
+                <div class="card-carousel--nav__right" @click="moveCarousel(1)" :disabled="atEndOfList"></div>
             </div>
-            <div class="swiper-pagination"></div>
+        </template>
+        <div id="app_carousel">
+            <carousel></carousel>
         </div>
-    </div>
 
 
 
@@ -213,169 +135,172 @@
 
 
 
-    <!-- PROJETS -->
-    <hr class="line">
-    </div>
+        <!-- TECHNOLOGIES -->
+        <hr class="line">
 
-    <div class="titre">
-        <span class="titre-hash">#</span>Technologies</a>
-    </div>
-    <div class="intro">
-        <p class="intro-text">
-            Je suis impatient de relever de nouveaux défis et de<br>
-            contribuer au succès de votre équipe. Je me réjouis d'avoir<br>
-            l'occasion de travailler avec vous et de développer mes<br>
-            compétences.
-        </p>
-    </div>
-
-
-
-    <div class="sections">
-        <div class="col">
-            <div class="techno-para">
-                <div class="techno-img">
-                    <img class="img" src="img/icons/html.webp" alt="Html" />
-                </div>
-                <div class="techno-list">
-
-                    <div class="techno-titre">HTML</div>
-                    <p class="p">Langage de balisage utilisé pour créer la structure et la présentation des pages web.
-                    </p>
-                </div>
-            </div>
-            <div class="techno-para">
-
-                <div class="techno-img">
-                    <img class="img" src="img/icons/css.webp" alt="CSS" />
-                </div>
-
-                <div class="techno-list">
-                    <div class="techno-titre">CSS</div>
-                    <p class="p">Langage de feuilles de style utilisé pour décrire la présentation d'un document écrit
-                        en HTML.</p>
-                </div>
-            </div>
-            <div class="techno-para">
-
-                <div class="techno-img">
-                    <img class="img" src="img/icons/js.webp" alt="Js" />
-                </div>
-
-                <div class="techno-list">
-                    <div class="techno-titre">JavaScript</div>
-                    <p class="p">Langage de programmation utilisé pour créer des sites web interactifs et dynamiques.
-                    </p>
-                </div>
-            </div>
-            <div class="techno-para">
-                <div class="techno-img">
-                    <img class="img" src="img/icons/vuejs.webp" alt="VueJS" />
-                </div>
-                <div class="techno-list">
-                    <div class="techno-titre">Vue.js</div>
-                    <p class="p">Cadre JavaScript open-source pour la création d'interfaces utilisateur.</p>
-                </div>
-            </div>
-            <div class="techno-para">
-                <div class="techno-img">
-                    <img class="img" src="img/icons/scala.webp" alt="Scala" />
-                </div>
-                <div class="techno-list">
-                    <div class="techno-titre">Scala</div>
-                    <p class="p">Langage de programmation polyvalent, compatible avec Java, et offrant des
-                        fonctionnalités de programmation fonctionnelle et orientée objet.</p>
-                </div>
-            </div>
-
+        <div class="titre">
+            <span class="titre-hash">#</span>Technologies</a>
         </div>
-        <div class="col">
-            <div class="techno-para">
-                <div class="techno-img">
-                    <img class="img" src="img/icons/git.webp" alt="GIT" />
+        <div class="intro" id="app_techno">
+            <p class="intro-text">
+                {{ message_technologie_1}}
+            </p>
+        </div>
+
+
+
+        <div class="sections">
+            <div class="col">
+                <div class="techno-para">
+                    <div class="techno-img">
+                        <img class="img" src="img/icons/html.webp" alt="Html" />
+                    </div>
+                    <div class="techno-list">
+
+                        <div class="techno-titre">HTML</div>
+                        <p class="p">Langage de balisage utilisé pour créer la structure et la présentation des pages
+                            web.
+                        </p>
+                    </div>
                 </div>
-                <div class="techno-list">
-                    <div class="techno-titre">GIT</div>
-                    <p class="p">Système de contrôle de version qui permet aux développeurs de suivre les modifications
-                        apportées à leur code, de collaborer avec d'autres personnes et de revenir facilement aux
-                        versions précédentes.</p>
+                <div class="techno-para">
+
+                    <div class="techno-img">
+                        <img class="img" src="img/icons/css.webp" alt="CSS" />
+                    </div>
+
+                    <div class="techno-list">
+                        <div class="techno-titre">CSS</div>
+                        <p class="p">Langage de feuilles de style utilisé pour décrire la présentation d'un document
+                            écrit
+                            en HTML.</p>
+                    </div>
                 </div>
+                <div class="techno-para">
+
+                    <div class="techno-img">
+                        <img class="img" src="img/icons/js.webp" alt="Js" />
+                    </div>
+
+                    <div class="techno-list">
+                        <div class="techno-titre">JavaScript</div>
+                        <p class="p">Langage de programmation utilisé pour créer des sites web interactifs et
+                            dynamiques.
+                        </p>
+                    </div>
+                </div>
+                <div class="techno-para">
+                    <div class="techno-img">
+                        <img class="img" src="img/icons/vuejs.webp" alt="VueJS" />
+                    </div>
+                    <div class="techno-list">
+                        <div class="techno-titre">Vue.js</div>
+                        <p class="p">Cadre JavaScript open-source pour la création d'interfaces utilisateur.</p>
+                    </div>
+                </div>
+                <div class="techno-para">
+                    <div class="techno-img">
+                        <img class="img" src="img/icons/scala.webp" alt="Scala" />
+                    </div>
+                    <div class="techno-list">
+                        <div class="techno-titre">Scala</div>
+                        <p class="p">Langage de programmation polyvalent, compatible avec Java, et offrant des
+                            fonctionnalités de programmation fonctionnelle et orientée objet.</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="techno-para">
-                <div class="techno-img">
-                    <img class="img" src="img/icons/php.webp" alt="PHP" />
+            <div class="col">
+                <div class="techno-para">
+                    <div class="techno-img">
+                        <img class="img" src="img/icons/git.webp" alt="GIT" />
+                    </div>
+                    <div class="techno-list">
+                        <div class="techno-titre">GIT</div>
+                        <p class="p">Système de contrôle de version qui permet aux développeurs de suivre les
+                            modifications
+                            apportées à leur code, de collaborer avec d'autres personnes et de revenir facilement aux
+                            versions précédentes.</p>
+                    </div>
                 </div>
-                <div class="techno-list">
-                    <div class="techno-titre">PHP</div>
-                    <p class="p">Langage de script côté serveur utilisé pour créer des pages web dynamiques.</p>
+                <div class="techno-para">
+                    <div class="techno-img">
+                        <img class="img" src="img/icons/php.webp" alt="PHP" />
+                    </div>
+                    <div class="techno-list">
+                        <div class="techno-titre">PHP</div>
+                        <p class="p">Langage de script côté serveur utilisé pour créer des pages web dynamiques.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="techno-para">
-                <div class="techno-img">
-                    <img class="img" src="img/icons/mysql.webp" alt="MySQL" />
+                <div class="techno-para">
+                    <div class="techno-img">
+                        <img class="img" src="img/icons/mysql.webp" alt="MySQL" />
+                    </div>
+                    <div class="techno-list">
+                        <div class="techno-titre">MySQL</div>
+                        <p class="p">Système de gestion de base de données relationnelle utilisé pour stocker et
+                            récupérer
+                            des données.</p>
+                    </div>
                 </div>
-                <div class="techno-list">
-                    <div class="techno-titre">MySQL</div>
-                    <p class="p">Système de gestion de base de données relationnelle utilisé pour stocker et récupérer
-                        des données.</p>
+                <div class="techno-para">
+                    <div class="techno-img">
+                        <img class="img" src="img/icons/java.webp" alt="Java" />
+                    </div>
+                    <div class="techno-list">
+                        <div class="techno-titre">Java</div>
+                        <p class="p">Langage de programmation polyvalent et orienté objet, fonctionnant sur une machine
+                            virtuelle pour une portabilité accrue.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="techno-para">
-                <div class="techno-img">
-                    <img class="img" src="img/icons/java.webp" alt="Java" />
-                </div>
-                <div class="techno-list">
-                    <div class="techno-titre">Java</div>
-                    <p class="p">Langage de programmation polyvalent et orienté objet, fonctionnant sur une machine
-                        virtuelle pour une portabilité accrue.</p>
-                </div>
-            </div>
-            <div class="techno-para">
-                <div class="techno-img">
-                    <img class="img" src="img/icons/tailwind.webp" alt="Tailwind" />
-                </div>
-                <div class="techno-list">
-                    <div class="techno-titre">Tailwind</div>
-                    <p class="p">Framework CSS utilisant des classes utilitaires pour simplifier la création d'interfaces web élégantes et personnalisables.</p>
+                <div class="techno-para">
+                    <div class="techno-img">
+                        <img class="img" src="img/icons/tailwind.webp" alt="Tailwind" />
+                    </div>
+                    <div class="techno-list">
+                        <div class="techno-titre">Tailwind</div>
+                        <p class="p">Framework CSS utilisant des classes utilitaires pour simplifier la création
+                            d'interfaces web élégantes et personnalisables.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- CONTACT -->
+        <!-- CONTACT -->
 
-    <hr class="line">
-    </div>
+        <hr class="line">
 
-    <div class="titre" id="CONTACT">
-        <span class="titre-hash">#</span>Contact</a>
-    </div>
-
-    <div class="contact">
-        <div class="contact-div">
-            <p class="contact-text-1">
-                Vous pouvez me contacter via Mail ou bien sur ces plateformes :
-            </p>
-            <div class="contact-img">
-                <a href="https://github.com/Theo22100" target="_blank"><img src="img/icons/GitHubW.webp" alt="GitHubBW"
-                        id="GitHubBW"></a>
-                <a href="https://www.linkedin.com/in/théo-guérin-b20630192/" target="_blank"><img
-                        src="img/icons/linkedinBW.webp" alt="linkedinBW" id="linkedinBW"></a>
-            </div>
-            <p class="contact-mail">
-                <a href="mailto:Theo.Guerin35000@gmail.com">Theo.Guerin35000@gmail.com</a>
-            </p>
+        <div class="titre" id="CONTACT">
+            <span class="titre-hash">#</span>Contact</a>
         </div>
-        <div class="contact-div">
-            <p class="contact-text-2">
-                Je suis impatient de relever de nouveaux défis et de contribuer au succès de votre équipe.
-            </p>
-            <p class="contact-text-2">
-                Je me réjouis d'avoir l'occasion de travailler avec vous et de développer mes compétences.
 
-            </p>
+        <div class="contact" id="app_contact">
+            <div class="contact-div">
+                <p class="contact-text-1">
+                    {{message_contact_1}}
+                </p>
+                <div class="contact-img">
+                    <a href="https://github.com/Theo22100" target="_blank"><img src="img/icons/GitHubW.webp"
+                            alt="GitHubBW" id="GitHubBW"></a>
+                    <a href="https://www.linkedin.com/in/théo-guérin-b20630192/" target="_blank"><img
+                            src="img/icons/linkedinBW.webp" alt="linkedinBW" id="linkedinBW"></a>
+                </div>
+                <p class="contact-mail">
+                    <a href="mailto:Theo.Guerin35000@gmail.com">{{mail}}</a>
+                </p>
+            </div>
+            <div class="contact-div">
+                <p class="contact-text-2">
+                    {{message_contact_2}}
+                </p>
+                <p class="contact-text-2">
+                    {{message_contact_3}}
 
 
+                </p>
+
+
+            </div>
         </div>
     </div>
 
@@ -409,37 +334,20 @@
         navLinks.classList.toggle('mobile-menu')
     })
 </script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-<!-- SWIPER-->
-<script>
-    if (screen.width > 900) {
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    } else {
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    }
+<!-- SWIPPER -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
 
-</script>
+
+
 
 
 <!-- BOOTSTRAPS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+
+<script src="js/app.js"> </script>
 
 
 
