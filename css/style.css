@@ -22,7 +22,7 @@ header {
 
 .navbar {
   position: fixed;
-  padding: 3px 50px;
+  padding: 3px 9%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,11 +31,15 @@ header {
   background-color: #1d1c1c5b;
   backdrop-filter: blur(7px);
   z-index: 100;
+  margin-top:10px;
+  border-radius: 30px;
+  
 }
 
 /* Appliquer le soulignement au texte lors du survol */
-.nav-links a:hover {
-  text-decoration: underline;
+.nav-links .menu_link:hover {
+  color: #05bffa;
+  transition: all .2s ease-in-out;
 }
 
 .navbar a {
@@ -65,31 +69,21 @@ header {
   padding: 18px 20px;
   font-size: 16px;
   color: white;
-  border: 3px solid #05bffa;
+  background-color: #05bffa;
   cursor: pointer;
   position: relative;
-  background-color: transparent;
   text-decoration: none;
   overflow: hidden;
-  z-index: 1;
+  border-radius: 10px;
 }
 
-.btn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #05bffa;
-  transform: translateX(-100%);
+.btn:hover {
+ 
+  background-color: #036c8d;
   transition: all .3s;
-  z-index: -1;
 }
 
-.btn:hover::before {
-  transform: translateX(0);
-}
+
 
 
 
@@ -641,6 +635,7 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
   
 
 
@@ -661,7 +656,8 @@ h1 {
 }
 
 .contact-mail a:hover {
-  text-decoration: underline;
+  transition: all .3s;
+  color: #05bffa;
 }
 
 .contact-text-2{
@@ -702,7 +698,7 @@ footer {
   font-family: "Sora";
   font-size: 10px;
   color: #F2F2F2;
-  margin: 0% 20%;
+  margin: 0% 8%;
   justify-content: space-between;
 
 
