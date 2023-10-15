@@ -149,122 +149,33 @@
 
 
 
-        <div class="sections">
+        <div class="sections" id="app_technolist">
             <div class="col">
-                <div class="techno-para">
+                <div class="techno-para" v-for="tech in leftColumn">
                     <div class="techno-img">
-                        <img class="img" src="img/icons/html.webp" alt="Html" />
+                        <img class="img" :src="tech.icon" :alt="tech.name" />
                     </div>
                     <div class="techno-list">
-
-                        <div class="techno-titre">HTML</div>
-                        <p class="p">Langage de balisage utilisé pour créer la structure et la présentation des pages
-                            web.
-                        </p>
+                        <div class="techno-titre">{{ tech.name }}</div>
+                        <p class="p">{{ tech.description }}</p>
                     </div>
                 </div>
-                <div class="techno-para">
-
-                    <div class="techno-img">
-                        <img class="img" src="img/icons/css.webp" alt="CSS" />
-                    </div>
-
-                    <div class="techno-list">
-                        <div class="techno-titre">CSS</div>
-                        <p class="p">Langage de feuilles de style utilisé pour décrire la présentation d'un document
-                            écrit
-                            en HTML.</p>
-                    </div>
-                </div>
-                <div class="techno-para">
-
-                    <div class="techno-img">
-                        <img class="img" src="img/icons/js.webp" alt="Js" />
-                    </div>
-
-                    <div class="techno-list">
-                        <div class="techno-titre">JavaScript</div>
-                        <p class="p">Langage de programmation utilisé pour créer des sites web interactifs et
-                            dynamiques.
-                        </p>
-                    </div>
-                </div>
-                <div class="techno-para">
-                    <div class="techno-img">
-                        <img class="img" src="img/icons/vuejs.webp" alt="VueJS" />
-                    </div>
-                    <div class="techno-list">
-                        <div class="techno-titre">Vue.js</div>
-                        <p class="p">Cadre JavaScript open-source pour la création d'interfaces utilisateur.</p>
-                    </div>
-                </div>
-                <div class="techno-para">
-                    <div class="techno-img">
-                        <img class="img" src="img/icons/scala.webp" alt="Scala" />
-                    </div>
-                    <div class="techno-list">
-                        <div class="techno-titre">Scala</div>
-                        <p class="p">Langage de programmation polyvalent, compatible avec Java, et offrant des
-                            fonctionnalités de programmation fonctionnelle et orientée objet.</p>
-                    </div>
-                </div>
-
             </div>
             <div class="col">
-                <div class="techno-para">
+                <div class="techno-para" v-for="tech in rightColumn">
                     <div class="techno-img">
-                        <img class="img" src="img/icons/git.webp" alt="GIT" />
+                        <img class="img" :src="tech.icon" :alt="tech.name" />
                     </div>
                     <div class="techno-list">
-                        <div class="techno-titre">GIT</div>
-                        <p class="p">Système de contrôle de version qui permet aux développeurs de suivre les
-                            modifications
-                            apportées à leur code, de collaborer avec d'autres personnes et de revenir facilement aux
-                            versions précédentes.</p>
-                    </div>
-                </div>
-                <div class="techno-para">
-                    <div class="techno-img">
-                        <img class="img" src="img/icons/php.webp" alt="PHP" />
-                    </div>
-                    <div class="techno-list">
-                        <div class="techno-titre">PHP</div>
-                        <p class="p">Langage de script côté serveur utilisé pour créer des pages web dynamiques.</p>
-                    </div>
-                </div>
-                <div class="techno-para">
-                    <div class="techno-img">
-                        <img class="img" src="img/icons/mysql.webp" alt="MySQL" />
-                    </div>
-                    <div class="techno-list">
-                        <div class="techno-titre">MySQL</div>
-                        <p class="p">Système de gestion de base de données relationnelle utilisé pour stocker et
-                            récupérer
-                            des données.</p>
-                    </div>
-                </div>
-                <div class="techno-para">
-                    <div class="techno-img">
-                        <img class="img" src="img/icons/java.webp" alt="Java" />
-                    </div>
-                    <div class="techno-list">
-                        <div class="techno-titre">Java</div>
-                        <p class="p">Langage de programmation polyvalent et orienté objet, fonctionnant sur une machine
-                            virtuelle pour une portabilité accrue.</p>
-                    </div>
-                </div>
-                <div class="techno-para">
-                    <div class="techno-img">
-                        <img class="img" src="img/icons/tailwind.webp" alt="Tailwind" />
-                    </div>
-                    <div class="techno-list">
-                        <div class="techno-titre">Tailwind</div>
-                        <p class="p">Framework CSS utilisant des classes utilitaires pour simplifier la création
-                            d'interfaces web élégantes et personnalisables.</p>
+                        <div class="techno-titre">{{ tech.name }}</div>
+                        <p class="p">{{ tech.description }}</p>
                     </div>
                 </div>
             </div>
         </div>
+
+  
+            
 
         <!-- CONTACT -->
 
