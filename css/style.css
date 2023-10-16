@@ -202,6 +202,17 @@ header {
   }
 
 
+  .intro-text-2,
+.intro-text-3 {
+  padding-left: 10px !important;
+  width: 200px !important;
+}
+
+.intro-pc-text .texts {
+  margin-left: 0px !important;
+
+}
+
 
 }
 
