@@ -757,6 +757,14 @@ footer {
   justify-content: space-between;
 }
 
+.text-footer a:hover {
+  transition: all .3s;
+  color: #05bffa;
+}
+
 a {
   color: white;
 }
+
+
+
