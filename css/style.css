@@ -36,10 +36,10 @@ header {
 
 }
 
-/* Appliquer le soulignement au texte lors du survol */
 .nav-links .menu_link:hover {
   color: #05bffa;
   transition: all .2s ease-in-out;
+  cursor: pointer; /* Changer le curseur de la souris */
 }
 
 .navbar a {
@@ -218,11 +218,12 @@ header {
 
 .present {
   display: flex;
-  padding-top: 5%;
-  padding-left: 5%;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 20%
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .present-text {
@@ -439,7 +440,8 @@ hr.line {
   display: flex;
   transition: transform 150ms ease-out;
   transform: translatex(0px);
-  padding: 30px 0px;
+  padding-top:30px;
+  padding-bottom: 130px;
 }
 
 .card-carousel-cards .card-carousel--card {
