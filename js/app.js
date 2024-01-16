@@ -173,6 +173,16 @@ var vm6 = new Vue({
                 name: 'Tailwind',
                 description: 'Framework CSS utilisant des classes utilitaires pour simplifier la création d\'interfaces web élégantes et personnalisables.',
                 icon: 'img/icons/tailwind.webp'
+            },
+            {
+                name: 'React',
+                description: 'Bibliothèque JavaScript pour créer des interfaces utilisateur interactives.',
+                icon: 'img/icons/tailwind.webp'
+            },
+            {
+                name: 'Flutter',
+                description: 'Framework Google pour développer des applications multiplateformes avec une base de code unique, en langage Dart',
+                icon: 'img/icons/tailwind.webp'
             }
         ],
         leftColumn: [],
