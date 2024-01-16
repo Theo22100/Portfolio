@@ -177,12 +177,12 @@ var vm6 = new Vue({
             {
                 name: 'React',
                 description: 'Bibliothèque JavaScript pour créer des interfaces utilisateur interactives.',
-                icon: 'img/icons/tailwind.webp'
+                icon: 'img/icons/react.webp'
             },
             {
                 name: 'Flutter',
                 description: 'Framework Google pour développer des applications multiplateformes avec une base de code unique, en langage Dart',
-                icon: 'img/icons/tailwind.webp'
+                icon: 'img/icons/flutter.webp'
             }
         ],
         leftColumn: [],
