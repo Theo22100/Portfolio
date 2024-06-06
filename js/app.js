@@ -7,6 +7,18 @@ Vue.component("carousel", {
             paginationFactor: 220,
             items: [
                 {
+                    name: 'LemonMaze',
+                    image: 'https://images.unsplash.com/photo-1687603863378-0761c86232bc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8dnVlanN8fHx8fHwxNjk2Mzc0MTgy&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200',
+                    tag: ["Flutter"],
+                    link: 'https://github.com/Theo22100/Lemon_Maze'
+                },
+                {
+                    name: 'API LemonMaze',
+                    image: 'https://images.unsplash.com/photo-1687603863378-0761c86232bc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8dnVlanN8fHx8fHwxNjk2Mzc0MTgy&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200',
+                    tag: ["Express.js"],
+                    link: 'https://github.com/Theo22100/APILemonMaze'
+                },
+                {
                     name: 'CosmicLink',
                     image: 'https://images.unsplash.com/photo-1516797045820-6edca89b2830?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8c3Rhcnx8fHx8fDE2OTYzNzQwMjI&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200',
                     tag: ["PHP", "JS", "Html", "CSS"],
@@ -25,17 +37,30 @@ Vue.component("carousel", {
                     link: 'https://github.com/Theo22100/PortFolio'
                 },
                 {
+                    name: 'Service Admin',
+                    image: 'https://images.unsplash.com/photo-1632406897767-2319bcedac9c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8YWRtaW58fHx8fHwxNjk2Mzc0MzA0&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200',
+                    tag: ["Tailwind", "Symfony"],
+                    link: 'https://github.com/imPayne/service_administratif'
+                },
+                {
+                    name: 'Minuteur',
+                    image: 'https://images.unsplash.com/photo-1687603863378-0761c86232bc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8dnVlanN8fHx8fHwxNjk2Mzc0MTgy&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200',
+                    tag: ["Kotlin"],
+                    link: 'https://github.com/Theo22100/MDS-ExamMobile2024'
+                },
+                {
+                    name: 'SQL Exam',
+                    image: 'https://images.unsplash.com/photo-1687603863378-0761c86232bc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8dnVlanN8fHx8fHwxNjk2Mzc0MTgy&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200',
+                    tag: ["MySQL"],
+                    link: 'https://github.com/Theo22100/exam-sql'
+                }
+                  
+                {
                     name: 'Début VueJS',
                     image: 'https://images.unsplash.com/photo-1687603863378-0761c86232bc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8dnVlanN8fHx8fHwxNjk2Mzc0MTgy&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200',
                     tag: ["VueJS"],
                     link: 'https://github.com/Theo22100/VueJS'
                 },
-                {
-                    name: 'Service Admin',
-                    image: 'https://images.unsplash.com/photo-1632406897767-2319bcedac9c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8YWRtaW58fHx8fHwxNjk2Mzc0MzA0&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200',
-                    tag: ["Tailwind", "Symfony"],
-                    link: 'https://github.com/imPayne/service_administratif'
-                }
             ]
         }
     },
