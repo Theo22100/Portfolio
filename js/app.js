@@ -53,14 +53,13 @@ Vue.component("carousel", {
                     image: 'https://images.unsplash.com/photo-1687603863378-0761c86232bc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8dnVlanN8fHx8fHwxNjk2Mzc0MTgy&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200',
                     tag: ["MySQL"],
                     link: 'https://github.com/Theo22100/exam-sql'
-                }
-                  
+                },
                 {
                     name: 'Début VueJS',
                     image: 'https://images.unsplash.com/photo-1687603863378-0761c86232bc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8dnVlanN8fHx8fHwxNjk2Mzc0MTgy&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200',
                     tag: ["VueJS"],
                     link: 'https://github.com/Theo22100/VueJS'
-                },
+                }
             ]
         }
     },
